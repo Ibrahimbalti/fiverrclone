@@ -1,18 +1,21 @@
 import "./App.css";
-import Header from "./component/Header";
-import HeroSelection from "./component/home/HeroSelection";
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import LandingPage from "./pages/LandingPage";
+import Sigin from "./pages/Sigin";
+import SignUp from "./pages/SignUp";
+
 
 function App() {
   return (
-    <div className=" bg-[url('https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80')]">
-      <Header />
-
-      <div>
-        <HeroSelection />
-      </div>
-
-      <div className='h-[800px] w-full bg-yellow-100'></div>
-    </div>
+    <>
+     <BrowserRouter>
+     <Routes>
+     <Route path="/"  element={<LandingPage/>}/>
+      <Route path="/sigin" element={<Sigin/>}/>
+      <Route path="/signup" element={<SignUp/>}/>
+     </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 

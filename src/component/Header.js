@@ -78,7 +78,7 @@ function Header() {
               Become a Seller
             </a>
             <a
-              href='#responsive-header'
+              href='/sigin'
               className='block mt-4 lg:inline-block lg:mt-0 mr-4'
             >
               Sign In
@@ -86,7 +86,7 @@ function Header() {
           </div>
           <div>
             <a
-              href='#'
+              href='/signup'
               className='inline-block text-lg px-4 py-2 leading-none font-semibold border rounded  border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0'
             >
               Join
