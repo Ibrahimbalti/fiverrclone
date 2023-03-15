@@ -22,16 +22,20 @@ function Header() {
       } z-50 `}
     >
       <nav
-        className={`flex items-center justify-center  gap-[40px] py-3 px-6 `}
+        className={` ${
+          colorChange
+            ? "justify-center border border-gray-300 gap-[40px]"
+            : "justify-between px-6"
+        } flex items-center   py-3  `}
       >
-        <div className='bg-red-500   mr-0 '>
+        <div className='   mr-0 w-auto '>
           <span className='font-bold text-3xl tracking-tight text-black'>
             Fiverr
           </span>
         </div>
 
         {colorChange && (
-          <div className='flex w-[500px] bg-yellow-300 border border-gray-300 h-[40px] items-center rounded-lg'>
+          <div className='flex w-[460px]  border border-gray-300 h-[40px] items-center rounded-lg'>
             <input
               placeholder='What services are you today '
               className='w-full py-1 px-4 outline-none'
@@ -54,40 +58,57 @@ function Header() {
           </button>
         </div>
         <div
-          className={`w-full block gap-3 lg:flex lg:items-center lg:w-auto ${
-            colorChange ? "text-black hover:text-green-500 " : "text-white"
-          }`}
+          className={`w-full block gap-3 lg:flex lg:items-center lg:w-6/12 `}
         >
-          <div className='text-lg  font-semibold lg:flex-grow gap-10'>
+          <div className='text-xl  font-semibold flex   gap-10  w-full'>
             <a
               href='#responsive-header'
-              className='block mt-4 lg:inline-block lg:mt-0 mr-4'
+              className={` ${
+                colorChange
+                  ? "text-blue-500 hover:text-green-500 "
+                  : "text-white"
+              }   block mt-4 lg:inline-block lg:mt-0 `}
             >
               Fiverr Bussiness
             </a>
             <a
               href='#responsive-header'
-              className='block mt-4 lg:inline-block lg:mt-0 mr-4'
+              className={` ${
+                colorChange ? "text-black hover:text-green-500 " : "text-white"
+              }   block mt-4 lg:inline-block lg:mt-0 `}
             >
               Explore
             </a>
             <a
               href='#responsive-header'
-              className='block mt-4 lg:inline-block lg:mt-0 mr-4'
+              className={` ${
+                colorChange ? "text-black hover:text-green-500 " : "text-white"
+              }   block mt-4 lg:inline-block lg:mt-0 `}
             >
               Become a Seller
             </a>
             <a
-              href='/sigin'
-              className='block mt-4 lg:inline-block lg:mt-0 mr-4'
+
+              
+              href='#responsive-header'
+              className={` ${
+                colorChange ? "text-black hover:text-green-500 " : "text-white"
+              }   block mt-4 lg:inline-block lg:mt-0 mr-4`}
+
             >
               Sign In
             </a>
           </div>
           <div>
             <a
-              href='/signup'
-              className='inline-block text-lg px-4 py-2 leading-none font-semibold border rounded  border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0'
+
+           
+              href='#'
+              className={`${
+                colorChange
+                  ? " border-green-500 text-green-500"
+                  : "border-white"
+              } inline-block text-lg px-4 py-2 leading-none font-semibold border rounded  hover:border-transparent hover:text-white  hover:bg-green-500 text-white mt-4 lg:mt-0`
             >
               Join
             </a>
@@ -95,7 +116,7 @@ function Header() {
         </div>
       </nav>
       {colorChange === true && (
-        <div className='flex gap-2 font-lg font-medium px-6 py-2 text-gray-300  w-full'>
+        <div className='flex gap-2 font-lg font-medium px-6 py-2 text-gray-700  w-full'>
           <a
             href='#responsive-header'
             className='block mt-4 lg:inline-block lg:mt-0 mr-4'
