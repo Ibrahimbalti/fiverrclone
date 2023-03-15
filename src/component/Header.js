@@ -88,22 +88,27 @@ function Header() {
               Become a Seller
             </a>
             <a
+
+              
               href='#responsive-header'
               className={` ${
                 colorChange ? "text-black hover:text-green-500 " : "text-white"
               }   block mt-4 lg:inline-block lg:mt-0 mr-4`}
+
             >
               Sign In
             </a>
           </div>
           <div>
             <a
+
+           
               href='#'
               className={`${
                 colorChange
                   ? " border-green-500 text-green-500"
                   : "border-white"
-              } inline-block text-lg px-4 py-2 leading-none font-semibold border rounded  hover:border-transparent hover:text-white  hover:bg-green-500 text-white mt-4 lg:mt-0`}
+              } inline-block text-lg px-4 py-2 leading-none font-semibold border rounded  hover:border-transparent hover:text-white  hover:bg-green-500 text-white mt-4 lg:mt-0`
             >
               Join
             </a>
