@@ -17,7 +17,7 @@ function Header() {
     <div
       className={`${
         colorChange
-          ? "sticky top-0 border border-b border-gray-300  bg-white  "
+          ? "sticky top-0 border border-b border-gray-300 text-green-500  bg-white  "
           : "bg-transparent"
       } z-50 `}
     >
@@ -113,8 +113,8 @@ function Header() {
               className={`${
                 colorChange
                   ? " border-green-500 text-green-500"
-                  : "border-white"
-              } inline-block text-lg px-4 py-2 leading-none font-semibold border rounded  hover:border-transparent hover:text-white  hover:bg-green-500 text-white mt-4 lg:mt-0`}
+                  : "border-white text-white"
+              } inline-block text-lg px-4 py-2 leading-none font-semibold border rounded  hover:border-transparent hover:text-white  hover:bg-green-500  mt-4 lg:mt-0`}
             >
               Join
             </a>

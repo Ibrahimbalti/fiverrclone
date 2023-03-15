@@ -3,6 +3,7 @@ import Header from "./component/Header";
 import HeroSelection from "./component/home/HeroSelection";
 import Banner from "./component/home/Banner";
 import PopularSlider from "./component/home/PopularSlider";
+import Footer from "./component/Footer";
 import MarketPlace from "./component/home/MarketPlace";
 import FiverBussiness from "./component/home/FiverBussiness";
 import VideoSlider from "./component/home/VideoSlider";
@@ -93,17 +94,6 @@ function App() {
             allowfullscreen
           ></iframe>
         </div>
-      </div>
-
-      <div className='w-full p-16 bg-[#FFFFFF]'>
-        <MarketPlace />
-      </div>
-
-      <div className='bg-[#0D084D] py-10 px-5'>
-        <FiverBussiness />
-      </div>
-      <div className='bg-white p-16'>
-        <VideoSlider />
       </div>
     </div>
   );
