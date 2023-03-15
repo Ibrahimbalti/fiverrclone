@@ -3,6 +3,7 @@ import Header from "./component/Header";
 import HeroSelection from "./component/home/HeroSelection";
 import Banner from "./component/home/Banner";
 import PopularSlider from "./component/home/PopularSlider";
+import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -91,6 +92,8 @@ function App() {
           ></iframe>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
