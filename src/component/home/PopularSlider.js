@@ -51,9 +51,9 @@ function PopularSlider() {
   return (
     <Slide {...fadeProperties}>
       {fadeImages.map((fadeImage, index) => (
-        <div key={index} className='mx-12 relative'>
+        <div key={index} className=' relative px-4'>
           <img src={fadeImage.url} className='w-auto h-[300px] rounded-lg ' />
-          <div className='absolute top-2 left-4'>
+          <div className='absolute top-2 left-10'>
             <h3 className='text-gray-400 font-medium text-sm '>
               {fadeImage.subTitle}
             </h3>

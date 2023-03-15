@@ -3,10 +3,13 @@ import Header from "./component/Header";
 import HeroSelection from "./component/home/HeroSelection";
 import Banner from "./component/home/Banner";
 import PopularSlider from "./component/home/PopularSlider";
+import MarketPlace from "./component/home/MarketPlace";
+import FiverBussiness from "./component/home/FiverBussiness";
+import VideoSlider from "./component/home/VideoSlider";
 
 function App() {
   return (
-    <div className="bg-white  bg-[url('https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80')]">
+    <div className="bg-white   bg-[url('https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80')]">
       <Header />
 
       <div>
@@ -90,6 +93,17 @@ function App() {
             allowfullscreen
           ></iframe>
         </div>
+      </div>
+
+      <div className='w-full p-16 bg-[#FFFFFF]'>
+        <MarketPlace />
+      </div>
+
+      <div className='bg-[#0D084D] py-10 px-5'>
+        <FiverBussiness />
+      </div>
+      <div className='bg-white p-16'>
+        <VideoSlider />
       </div>
     </div>
   );
